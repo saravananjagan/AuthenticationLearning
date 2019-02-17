@@ -1,0 +1,7 @@
+D:\PMS_V2\AuthenticationLearning_WithoutWebApi\IPMSService\bin\Debug\IPMSService.exe.config
+D:\PMS_V2\AuthenticationLearning_WithoutWebApi\IPMSService\bin\Debug\IPMSService.exe
+D:\PMS_V2\AuthenticationLearning_WithoutWebApi\IPMSService\bin\Debug\IPMSService.pdb
+D:\PMS_V2\AuthenticationLearning_WithoutWebApi\IPMSService\obj\Debug\IPMSService.csprojAssemblyReference.cache
+D:\PMS_V2\AuthenticationLearning_WithoutWebApi\IPMSService\obj\Debug\IPMSService.csproj.CoreCompileInputs.cache
+D:\PMS_V2\AuthenticationLearning_WithoutWebApi\IPMSService\obj\Debug\IPMSService.exe
+D:\PMS_V2\AuthenticationLearning_WithoutWebApi\IPMSService\obj\Debug\IPMSService.pdb
