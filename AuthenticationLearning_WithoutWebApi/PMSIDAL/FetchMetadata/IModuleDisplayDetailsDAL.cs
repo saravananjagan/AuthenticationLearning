@@ -9,6 +9,6 @@ namespace PMSIDAL.FetchMetadata
 {
     public interface IModuleDisplayDetailsDAL
     {
-        DataSet FetchModuleDisplayDetails(string TenantId, string RoleId);
+        DataSet FetchModuleDisplayDetails(string TenantId, string UserId);
     }
 }

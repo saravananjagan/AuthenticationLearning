@@ -12,13 +12,13 @@ namespace PMSService.FetchMetadata
 {
     public class ModuleDisplayDetailsService : IModuleDisplayDetailsService
     {
-        public DataSet FetchModuleDisplayDetails(string TenantId, string RoleId)
+        public DataSet FetchModuleDisplayDetails(string TenantId, string UserId)
         {
             DataSet ModuleDetails = new DataSet();
             try
             {
                 IModuleDisplayDetailsDAL moduleDisplayDetailsDAL = new ModuleDisplayDetailsDAL();
-                ModuleDetails=moduleDisplayDetailsDAL.FetchModuleDisplayDetails(TenantId,RoleId);
+                ModuleDetails=moduleDisplayDetailsDAL.FetchModuleDisplayDetails(TenantId,UserId);
             }
             catch (Exception e)
             {

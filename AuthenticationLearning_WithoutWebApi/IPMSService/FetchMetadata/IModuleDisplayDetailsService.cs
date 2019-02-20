@@ -9,6 +9,6 @@ namespace IPMSService.FetchMetadata
 {
     public interface IModuleDisplayDetailsService
     {
-        DataSet FetchModuleDisplayDetails(string TenantId, string RoleId);
+        DataSet FetchModuleDisplayDetails(string TenantId, string UserId);
     }
 }
