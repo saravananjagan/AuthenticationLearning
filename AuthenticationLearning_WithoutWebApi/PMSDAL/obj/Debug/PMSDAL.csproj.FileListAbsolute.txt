@@ -9,3 +9,14 @@ D:\PMS_V2\AuthenticationLearning_WithoutWebApi\PMSDAL\obj\Debug\PMSDAL.csproj.Co
 D:\PMS_V2\AuthenticationLearning_WithoutWebApi\PMSDAL\obj\Debug\PMSDAL.csproj.CopyComplete
 D:\PMS_V2\AuthenticationLearning_WithoutWebApi\PMSDAL\obj\Debug\PMSDAL.exe
 D:\PMS_V2\AuthenticationLearning_WithoutWebApi\PMSDAL\obj\Debug\PMSDAL.pdb
+D:\PMS_V2\V2_Test\AuthenticationLearning\AuthenticationLearning_WithoutWebApi\PMSDAL\bin\Debug\PMSDAL.exe.config
+D:\PMS_V2\V2_Test\AuthenticationLearning\AuthenticationLearning_WithoutWebApi\PMSDAL\bin\Debug\PMSDAL.exe
+D:\PMS_V2\V2_Test\AuthenticationLearning\AuthenticationLearning_WithoutWebApi\PMSDAL\bin\Debug\PMSDAL.pdb
+D:\PMS_V2\V2_Test\AuthenticationLearning\AuthenticationLearning_WithoutWebApi\PMSDAL\bin\Debug\PMSIDAL.exe
+D:\PMS_V2\V2_Test\AuthenticationLearning\AuthenticationLearning_WithoutWebApi\PMSDAL\bin\Debug\PMSIDAL.pdb
+D:\PMS_V2\V2_Test\AuthenticationLearning\AuthenticationLearning_WithoutWebApi\PMSDAL\bin\Debug\PMSIDAL.exe.config
+D:\PMS_V2\V2_Test\AuthenticationLearning\AuthenticationLearning_WithoutWebApi\PMSDAL\obj\Debug\PMSDAL.csprojAssemblyReference.cache
+D:\PMS_V2\V2_Test\AuthenticationLearning\AuthenticationLearning_WithoutWebApi\PMSDAL\obj\Debug\PMSDAL.csproj.CoreCompileInputs.cache
+D:\PMS_V2\V2_Test\AuthenticationLearning\AuthenticationLearning_WithoutWebApi\PMSDAL\obj\Debug\PMSDAL.csproj.CopyComplete
+D:\PMS_V2\V2_Test\AuthenticationLearning\AuthenticationLearning_WithoutWebApi\PMSDAL\obj\Debug\PMSDAL.exe
+D:\PMS_V2\V2_Test\AuthenticationLearning\AuthenticationLearning_WithoutWebApi\PMSDAL\obj\Debug\PMSDAL.pdb

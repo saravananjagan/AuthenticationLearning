@@ -48,7 +48,7 @@ namespace AuthenticationLearning_WithoutWebApi.Controllers
                 {
                     foreach (DataRow menuRow in MenuDetailsTable.Rows)
                     {
-                        MenuDOM.Append("<li><a href=\"" + menuRow["ModuleURL"] + "\">" + menuRow["ModuleDisplayName"] + "</a>");
+                        MenuDOM.Append("<li id=\"" + menuRow["ModuleId"] + "\"><a href=\"" + menuRow["ModuleURL"] + "\">" + menuRow["ModuleDisplayName"] + "</a>");
                     }
                 }
                 return MenuDOM.ToString();

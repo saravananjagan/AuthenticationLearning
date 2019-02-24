@@ -10,5 +10,6 @@ namespace PMSIDAL.FetchMetadata
     public interface IModuleDisplayDetailsDAL
     {
         DataSet FetchModuleDisplayDetails(string TenantId, string UserId);
+        DataSet FetchModuleDisplayDetailsByParent(string ParentModuleId, string UserId);
     }
 }

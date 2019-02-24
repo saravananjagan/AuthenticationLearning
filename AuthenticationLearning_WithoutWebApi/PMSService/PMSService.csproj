@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Authorization\ValidateAuthorizationService.cs" />
     <Compile Include="FetchMetadata\ModuleDisplayDetailsService.cs" />
     <Compile Include="FetchMetadata\TenantDetailsService.cs" />
     <Compile Include="Program.cs" />

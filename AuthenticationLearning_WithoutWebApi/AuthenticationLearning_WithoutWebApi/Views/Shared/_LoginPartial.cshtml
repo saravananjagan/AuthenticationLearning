@@ -21,6 +21,10 @@
                     }
                 }).done(function () {
                     $("#MenuSection").append('<li><a href="javascript:document.getElementById(\'logoutForm\').submit()">Log off</a></li>');
+                    if ($("#ViewModuleId") != undefined) {
+                        var ActiveView = $("#ViewModuleId").val();
+                        $("#" + ActiveView).addClass("active");
+                    }
                 });
             });
         </script>

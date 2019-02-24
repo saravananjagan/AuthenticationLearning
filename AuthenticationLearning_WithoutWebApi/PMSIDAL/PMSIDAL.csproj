@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Authorization\IValidateAuthorizationDAL.cs" />
     <Compile Include="FetchMetadata\IModuleDisplayDetailsDAL.cs" />
     <Compile Include="FetchMetadata\ITenantDetailsDAL.cs" />
     <Compile Include="Program.cs" />

@@ -44,6 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Authorization\ValidateAuthorizationDAL.cs" />
     <Compile Include="FetchMetadata\ModuleDisplayDetailsDAL.cs" />
     <Compile Include="FetchMetadata\TenantDetailsDAL.cs" />
     <Compile Include="Program.cs" />

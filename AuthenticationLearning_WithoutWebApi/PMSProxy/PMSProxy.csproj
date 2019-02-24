@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Authorization\ValidateAuthorizationProxy.cs" />
     <Compile Include="FetchMetadata\ModuleDisplayDetailsProxy.cs" />
     <Compile Include="FetchMetadata\TenantDetailsProxy.cs" />
     <Compile Include="Program.cs" />

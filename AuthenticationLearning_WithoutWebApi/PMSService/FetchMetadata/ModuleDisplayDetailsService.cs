@@ -26,5 +26,20 @@ namespace PMSService.FetchMetadata
             }
             return ModuleDetails;
         }
+
+        public DataSet FetchModuleDisplayDetailsByParent(string ParentModuleId, string UserId)
+        {
+            DataSet ModuleDetails = new DataSet();
+            try
+            {
+                IModuleDisplayDetailsDAL moduleDisplayDetailsDAL = new ModuleDisplayDetailsDAL();
+                ModuleDetails = moduleDisplayDetailsDAL.FetchModuleDisplayDetailsByParent(ParentModuleId, UserId);
+            }
+            catch (Exception e)
+            {
+
+            }
+            return ModuleDetails;
+        }
     }
 }

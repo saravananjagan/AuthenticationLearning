@@ -16,5 +16,10 @@ namespace PMSProxy.FetchMetadata
             IModuleDisplayDetailsService moduleDisplayDetailsService = new ModuleDisplayDetailsService();
             return moduleDisplayDetailsService.FetchModuleDisplayDetails(TenantId, UserId);
         }
+        public static DataSet FetchModuleDisplayDetailsByParent(string ParentModuleId, string UserId)
+        {
+            IModuleDisplayDetailsService moduleDisplayDetailsService = new ModuleDisplayDetailsService();
+            return moduleDisplayDetailsService.FetchModuleDisplayDetailsByParent(ParentModuleId, UserId);
+        }
     }
 }

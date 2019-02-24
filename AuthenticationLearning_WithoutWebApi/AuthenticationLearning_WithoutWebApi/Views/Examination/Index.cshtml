@@ -1,0 +1,53 @@
+﻿@using System.Data
+@{
+    /**/
+
+    ViewBag.Title = "Index";
+    DataTable ModuleDetails = Model;
+}
+<link href="~/Content/Site.css" rel="stylesheet" />
+<link href="~/Content/all.css" rel="stylesheet" />
+<link href="~/Content/fontawesome.css" rel="stylesheet" />
+<link href="~/Content/brands.css" rel="stylesheet" />
+<link href="~/Content/regular.css" rel="stylesheet" />
+<link href="~/Content/solid.css" rel="stylesheet" />
+<link href="~/Content/svg-with-js.css" rel="stylesheet" />
+<link href="~/Content/v4-shims.css" rel="stylesheet" />
+@if (!String.IsNullOrEmpty(ViewBag.ErrorMessage))
+{
+    <h3>@ViewBag.ErrorMessage</h3>
+}
+else
+{
+    if (ModuleDetails != null)
+    {
+        <div class="container">
+            <h2>@ModuleDetails.Rows[0]["ParentModuleDisplayName"].ToString()</h2>
+        </div>
+        <div class="container">
+            <div class="panel panel-default">
+                <div class="panel-heading" style="background-color: black;">
+                    <h4 style="color: white;">
+                        @ModuleDetails.Rows[0]["ParentModulePanelTitle"].ToString()
+                    </h4>
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        @foreach (DataRow row in ModuleDetails.Rows)
+                        {
+                            <div class="column">
+                                <div class="grid_item">
+                                    <i class="@row["ModuleIconClass"]"></i>&nbsp;
+                                    <strong><a href="@row["ModuleURL"]">@row["ModuleDisplayName"]</a></strong>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+        <input type="hidden" id="ViewModuleId" value="@ModuleDetails.Rows[0]["ParentModuleId"].ToString()" />
+    }
+}
+
+

@@ -38,5 +38,31 @@ namespace PMSDAL.FetchMetadata
                 ModuleDisplayDetails = null;
             }
         }
+
+        public DataSet FetchModuleDisplayDetailsByParent(string ParentModuleId, string UserId)
+        {
+            DataSet ModuleDisplayDetails = new DataSet();
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(ConnectionString))
+                {
+                    SqlCommand sqlCommand = new SqlCommand("dbo.USP_FetchModuleDetailsByParent", connection);
+                    sqlCommand.CommandType = CommandType.StoredProcedure;
+                    sqlCommand.Parameters.Add("@ParentModuleId", SqlDbType.UniqueIdentifier).Value = Guid.Parse(ParentModuleId);
+                    sqlCommand.Parameters.Add("@UserId", SqlDbType.UniqueIdentifier).Value = Guid.Parse(UserId);
+                    connection.Open();
+                    sqlCommand.CommandTimeout = 120;
+                    SqlDataAdapter adapter = new SqlDataAdapter(sqlCommand);
+                    adapter.Fill(ModuleDisplayDetails);
+                    connection.Close();
+                    adapter.Dispose();
+                }
+                return ModuleDisplayDetails;
+            }
+            finally
+            {
+                ModuleDisplayDetails = null;
+            }
+        }
     }
 }
