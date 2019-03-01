@@ -12,7 +12,7 @@ namespace PMSDAL.FetchMetadata
 {
     public class ModuleDisplayDetailsDAL : IModuleDisplayDetailsDAL
     {
-        private string ConnectionString = ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;
+        private readonly string ConnectionString = ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;
         public DataSet FetchModuleDisplayDetails(string TenantId, string UserId)
         {
             DataSet ModuleDisplayDetails = new DataSet();
@@ -20,15 +20,15 @@ namespace PMSDAL.FetchMetadata
             {
                 using (SqlConnection connection = new SqlConnection(ConnectionString))
                 {
-                    SqlCommand sqlCommand = new SqlCommand("dbo.USP_FetchModuleDisplayDetails",connection);
-                    sqlCommand.CommandType = CommandType.StoredProcedure;
+                    SqlCommand sqlCommand = new SqlCommand("dbo.USP_FetchModuleDisplayDetails", connection)
+                    {
+                        CommandType = CommandType.StoredProcedure
+                    };
                     sqlCommand.Parameters.Add("@TenantId",SqlDbType.UniqueIdentifier).Value=Guid.Parse(TenantId);
                     sqlCommand.Parameters.Add("@UserId", SqlDbType.UniqueIdentifier).Value = Guid.Parse(UserId);
-                    connection.Open();
                     sqlCommand.CommandTimeout = 120;
                     SqlDataAdapter adapter = new SqlDataAdapter(sqlCommand);
                     adapter.Fill(ModuleDisplayDetails);
-                    connection.Close();
                     adapter.Dispose();
                 }
                     return ModuleDisplayDetails;
@@ -46,15 +46,15 @@ namespace PMSDAL.FetchMetadata
             {
                 using (SqlConnection connection = new SqlConnection(ConnectionString))
                 {
-                    SqlCommand sqlCommand = new SqlCommand("dbo.USP_FetchModuleDetailsByParent", connection);
-                    sqlCommand.CommandType = CommandType.StoredProcedure;
+                    SqlCommand sqlCommand = new SqlCommand("dbo.USP_FetchModuleDetailsByParent", connection)
+                    {
+                        CommandType = CommandType.StoredProcedure
+                    };
                     sqlCommand.Parameters.Add("@ParentModuleId", SqlDbType.UniqueIdentifier).Value = Guid.Parse(ParentModuleId);
                     sqlCommand.Parameters.Add("@UserId", SqlDbType.UniqueIdentifier).Value = Guid.Parse(UserId);
-                    connection.Open();
                     sqlCommand.CommandTimeout = 120;
                     SqlDataAdapter adapter = new SqlDataAdapter(sqlCommand);
                     adapter.Fill(ModuleDisplayDetails);
-                    connection.Close();
                     adapter.Dispose();
                 }
                 return ModuleDisplayDetails;

@@ -22,7 +22,7 @@ namespace AuthenticationLearning_WithoutWebApi.Controllers
 
                 ViewBag.displayMenu = "No";
 
-                if (isAdminUser())
+                if (IsAdminUser())
                 {
                     ViewBag.displayMenu = "Yes";
                 }
@@ -59,7 +59,7 @@ namespace AuthenticationLearning_WithoutWebApi.Controllers
             }
         }
 
-        private Boolean isAdminUser()
+        private Boolean IsAdminUser()
         {
             if (User.Identity.IsAuthenticated)
             {                

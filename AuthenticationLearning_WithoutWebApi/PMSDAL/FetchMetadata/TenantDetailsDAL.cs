@@ -11,7 +11,7 @@ namespace PMSDAL.FetchMetadata
 {
     public class TenantDetailsDAL : ITenantDetailsDAL
     {
-        private string Connection = ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;
+        private readonly string Connection = ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;
         public string FetchTenantId()
         {            
             StringBuilder FetchQuery = new StringBuilder();

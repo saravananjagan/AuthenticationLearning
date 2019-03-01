@@ -23,7 +23,7 @@ namespace AuthenticationLearning_WithoutWebApi.Controllers
             {
 
 
-                if (!isAdminUser())
+                if (!IsAdminUser())
                 {
                     return RedirectToAction("Index", "Home");
                 }
@@ -42,7 +42,7 @@ namespace AuthenticationLearning_WithoutWebApi.Controllers
         {
             if (User.Identity.IsAuthenticated)
             {
-                if (!isAdminUser())
+                if (!IsAdminUser())
                 {
                     return RedirectToAction("Index", "Home");
                 }
@@ -60,7 +60,7 @@ namespace AuthenticationLearning_WithoutWebApi.Controllers
         {
             if (User.Identity.IsAuthenticated)
             {
-                if (!isAdminUser())
+                if (!IsAdminUser())
                 {
                     return RedirectToAction("Index", "Home");
                 }
@@ -73,8 +73,10 @@ namespace AuthenticationLearning_WithoutWebApi.Controllers
             var roleManager = new RoleManager<IdentityRole>(new RoleStore<IdentityRole>(context));
             if (!roleManager.RoleExists(RoleName) && !string.IsNullOrEmpty(RoleName))
             {
-                var role = new IdentityRole();
-                role.Name = RoleName;
+                var role = new IdentityRole
+                {
+                    Name = RoleName
+                };
                 roleManager.Create(role);
             }
             else if (string.IsNullOrEmpty(RoleName))
@@ -90,7 +92,7 @@ namespace AuthenticationLearning_WithoutWebApi.Controllers
                 return RedirectToAction("Index", "Roles");
         }
 
-        private Boolean isAdminUser()
+        private bool IsAdminUser()
         {
             if (User.Identity.IsAuthenticated)
             {

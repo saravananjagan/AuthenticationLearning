@@ -12,3 +12,14 @@ D:\PMS_V2\V2_Test\AuthenticationLearning\AuthenticationLearning_WithoutWebApi\PM
 D:\PMS_V2\V2_Test\AuthenticationLearning\AuthenticationLearning_WithoutWebApi\PMSIDAL\obj\Debug\PMSIDAL.csproj.CoreCompileInputs.cache
 D:\PMS_V2\V2_Test\AuthenticationLearning\AuthenticationLearning_WithoutWebApi\PMSIDAL\obj\Debug\PMSIDAL.exe
 D:\PMS_V2\V2_Test\AuthenticationLearning\AuthenticationLearning_WithoutWebApi\PMSIDAL\obj\Debug\PMSIDAL.pdb
+E:\AuthLearning_1Mar2019\AuthenticationLearning\AuthenticationLearning_WithoutWebApi\PMSIDAL\bin\Debug\PMSIDAL.exe.config
+E:\AuthLearning_1Mar2019\AuthenticationLearning\AuthenticationLearning_WithoutWebApi\PMSIDAL\bin\Debug\PMSIDAL.exe
+E:\AuthLearning_1Mar2019\AuthenticationLearning\AuthenticationLearning_WithoutWebApi\PMSIDAL\bin\Debug\PMSIDAL.pdb
+E:\AuthLearning_1Mar2019\AuthenticationLearning\AuthenticationLearning_WithoutWebApi\PMSIDAL\obj\Debug\PMSIDAL.csproj.CoreCompileInputs.cache
+E:\AuthLearning_1Mar2019\AuthenticationLearning\AuthenticationLearning_WithoutWebApi\PMSIDAL\obj\Debug\PMSIDAL.exe
+E:\AuthLearning_1Mar2019\AuthenticationLearning\AuthenticationLearning_WithoutWebApi\PMSIDAL\obj\Debug\PMSIDAL.pdb
+E:\AuthLearning_1Mar2019\AuthenticationLearning\AuthenticationLearning_WithoutWebApi\PMSIDAL\bin\Debug\log4net.dll
+E:\AuthLearning_1Mar2019\AuthenticationLearning\AuthenticationLearning_WithoutWebApi\PMSIDAL\bin\Debug\log4net.xml
+E:\AuthLearning_1Mar2019\AuthenticationLearning\AuthenticationLearning_WithoutWebApi\PMSIDAL\obj\Debug\PMSIDAL.csproj.CopyComplete
+E:\AuthLearning_1Mar2019\AuthenticationLearning\AuthenticationLearning_WithoutWebApi\PMSIDAL\bin\Debug\PMSIDAL.exe.CodeAnalysisLog.xml
+E:\AuthLearning_1Mar2019\AuthenticationLearning\AuthenticationLearning_WithoutWebApi\PMSIDAL\bin\Debug\PMSIDAL.exe.lastcodeanalysissucceeded
